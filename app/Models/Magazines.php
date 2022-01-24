@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+
+class Magazines extends Model
+{
+    use HasFactory;
+    public function magazine(){
+        return $this->hasMany(Magazines::class);
+    }
+}
